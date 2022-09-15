@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F982B1D28B0A92600107000 /* BalanceGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F982B1C28B0A92600107000 /* BalanceGameApp.swift */; };
+		7F982B1D28B0A92600107000 /* HandbellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F982B1C28B0A92600107000 /* HandbellApp.swift */; };
 		7F982B1F28B0A92600107000 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F982B1E28B0A92600107000 /* ContentView.swift */; };
 		7F982B2128B0A92C00107000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F982B2028B0A92C00107000 /* Assets.xcassets */; };
 		7F982B2428B0A92C00107000 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F982B2328B0A92C00107000 /* Preview Assets.xcassets */; };
+		7F982B2B28B0AFDA00107000 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F982B2A28B0AFDA00107000 /* MotionManager.swift */; };
+		7F982B2D28B0B9E600107000 /* MotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F982B2C28B0B9E600107000 /* MotionViewModel.swift */; };
+		7FA776C528B84E6900C48A5A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA776C428B84E6900C48A5A /* MainView.swift */; };
+		7FA776C728C1A15300C48A5A /* ChangeSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA776C628C1A15200C48A5A /* ChangeSoundView.swift */; };
+		7FD72CB928C6DD2A0037ADF1 /* GravityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD72CB828C6DD2A0037ADF1 /* GravityManager.swift */; };
+		7FD72CBB28CAD5EC0037ADF1 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD72CBA28CAD5EC0037ADF1 /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F982B1928B0A92600107000 /* BalanceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalanceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F982B1C28B0A92600107000 /* BalanceGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameApp.swift; sourceTree = "<group>"; };
+		7F982B1928B0A92600107000 /* Handbell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Handbell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F982B1C28B0A92600107000 /* HandbellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandbellApp.swift; sourceTree = "<group>"; };
 		7F982B1E28B0A92600107000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F982B2028B0A92C00107000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F982B2328B0A92C00107000 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F982B2A28B0AFDA00107000 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		7F982B2C28B0B9E600107000 /* MotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewModel.swift; sourceTree = "<group>"; };
+		7FA776C428B84E6900C48A5A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7FA776C628C1A15200C48A5A /* ChangeSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSoundView.swift; sourceTree = "<group>"; };
+		7FD72CB828C6DD2A0037ADF1 /* GravityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityManager.swift; sourceTree = "<group>"; };
+		7FD72CBA28CAD5EC0037ADF1 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +55,7 @@
 		7F982B1A28B0A92600107000 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F982B1928B0A92600107000 /* BalanceGame.app */,
+				7F982B1928B0A92600107000 /* Handbell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +63,11 @@
 		7F982B1B28B0A92600107000 /* BalanceGame */ = {
 			isa = PBXGroup;
 			children = (
-				7F982B1C28B0A92600107000 /* BalanceGameApp.swift */,
+				7F982B1C28B0A92600107000 /* HandbellApp.swift */,
 				7F982B1E28B0A92600107000 /* ContentView.swift */,
+				7FA776C828C1A16B00C48A5A /* View */,
+				7FA776CA28C1A1B100C48A5A /* ViewModel */,
+				7FA776C928C1A1A200C48A5A /* Model */,
 				7F982B2028B0A92C00107000 /* Assets.xcassets */,
 				7F982B2228B0A92C00107000 /* Preview Content */,
 			);
@@ -67,12 +82,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7FA776C828C1A16B00C48A5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FA776C428B84E6900C48A5A /* MainView.swift */,
+				7FA776C628C1A15200C48A5A /* ChangeSoundView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FA776C928C1A1A200C48A5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F982B2A28B0AFDA00107000 /* MotionManager.swift */,
+				7FD72CB828C6DD2A0037ADF1 /* GravityManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FA776CA28C1A1B100C48A5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F982B2C28B0B9E600107000 /* MotionViewModel.swift */,
+				7FD72CBA28CAD5EC0037ADF1 /* SoundPlayer.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F982B1828B0A92500107000 /* BalanceGame */ = {
+		7F982B1828B0A92500107000 /* Handbell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F982B2728B0A92C00107000 /* Build configuration list for PBXNativeTarget "BalanceGame" */;
+			buildConfigurationList = 7F982B2728B0A92C00107000 /* Build configuration list for PBXNativeTarget "Handbell" */;
 			buildPhases = (
 				7F982B1528B0A92500107000 /* Sources */,
 				7F982B1628B0A92500107000 /* Frameworks */,
@@ -82,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = BalanceGame;
+			name = Handbell;
 			productName = BalanceGame;
-			productReference = 7F982B1928B0A92600107000 /* BalanceGame.app */;
+			productReference = 7F982B1928B0A92600107000 /* Handbell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7F982B1428B0A92500107000 /* Build configuration list for PBXProject "BalanceGame" */;
+			buildConfigurationList = 7F982B1428B0A92500107000 /* Build configuration list for PBXProject "Handbell" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F982B1828B0A92500107000 /* BalanceGame */,
+				7F982B1828B0A92500107000 /* Handbell */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA776C728C1A15300C48A5A /* ChangeSoundView.swift in Sources */,
 				7F982B1F28B0A92600107000 /* ContentView.swift in Sources */,
-				7F982B1D28B0A92600107000 /* BalanceGameApp.swift in Sources */,
+				7FD72CBB28CAD5EC0037ADF1 /* SoundPlayer.swift in Sources */,
+				7F982B2B28B0AFDA00107000 /* MotionManager.swift in Sources */,
+				7F982B2D28B0B9E600107000 /* MotionViewModel.swift in Sources */,
+				7FA776C528B84E6900C48A5A /* MainView.swift in Sources */,
+				7F982B1D28B0A92600107000 /* HandbellApp.swift in Sources */,
+				7FD72CB928C6DD2A0037ADF1 /* GravityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -320,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F982B1428B0A92500107000 /* Build configuration list for PBXProject "BalanceGame" */ = {
+		7F982B1428B0A92500107000 /* Build configuration list for PBXProject "Handbell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F982B2528B0A92C00107000 /* Debug */,
@@ -329,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F982B2728B0A92C00107000 /* Build configuration list for PBXNativeTarget "BalanceGame" */ = {
+		7F982B2728B0A92C00107000 /* Build configuration list for PBXNativeTarget "Handbell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F982B2828B0A92C00107000 /* Debug */,

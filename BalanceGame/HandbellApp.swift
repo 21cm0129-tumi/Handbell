@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BalanceGameApp: App {
+struct HandbellApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
