@@ -19,64 +19,23 @@ struct MainView: View {
         
         VStack{
             
-            //        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            //            print("1秒経ちました。")
-            //
-            //
-            //        }
-            
-            
             VStack{
                 
                 Spacer()
                 
-                
                 Image(systemName: self.imageName )
-                
-                
+                            
                 Spacer()
-                
-                // .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
-                //                    print("シェイクしたよ")
-                //                    viewModel.isShakeFlag = true
-                //                    viewModel.changeImage()
-                //                    print(viewModel.isShakeFlag)
-                //
-                //                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                //                        print("1秒経ちました。")
-                //                        viewModel.isShakeFlag = false
-                //                        viewModel.changeImage()
-                //                        print(viewModel.isShakeFlag)
-                //
-                //                    }
-                //
-                //                }
-                
-                
-                // .scaleEffect(flag ? 2.0 : 1.0)
-                
-                // Viewの拡大
-                // .rotationEffect(Angle(degrees: flag ? 360 : 0))
-                // Viewの回転
-                // .offset(x: flag ? 100 : -100)
-                // Viewの表示位置
-                // アニメーション設定
-                // .animation(.default)
-                
+  
             }
             .onAppear() {
                 // 1.0秒おきに{}内を繰り返す
                 Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {timer in
-                    //                self.count -= 1
-                    //                if self.count == 0 {
-                    /// 現在のカウントが0になったらtimerを終了させ、カントダウン終了状態に更新
-                    //                    timer.invalidate()
-                    //                    self.isCountDown = false
-                    //                }
+
                     
                     if viewModel.changeImage() == true {
                         self.imageName = viewModel.imageName
-                        soundPlayer.pianoCPlay()
+                        
                         //音を鳴らす
                     } else {
                         self.imageName = viewModel.imageName
